@@ -1,5 +1,11 @@
+:root {
+  --first-color: #F53838;
+  --second-color: #0B132A;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: #fff;
 }
 
 /* || Navbar start */
@@ -20,6 +26,10 @@ body {
   color: #F53855;
 }
 
+.nav-btn {
+  font-weight: 500;
+}
+
 .btn-outline-signup {
   color: #F53855;
   border-color: #F53855;
@@ -31,8 +41,8 @@ body {
   color: #fff;
 }
 
-a.nav-link.fw-bold {
-  color: #0B132A;
+.nav-btn a.nav-link {
+  color: var(--second-color);
   cursor: pointer;
 }
 
@@ -63,3 +73,86 @@ a.nav-link.fw-bold {
 }
 
 /* || Navbar end */
+
+/* || Hero start */
+
+.hero {
+  padding: 2rem 0;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--second-color);
+}
+
+.hero-content p {
+  color: #4F5665;
+  margin: 20px 0;
+  font-size: 0.9rem;
+}
+
+.hero-btn {
+  padding: 1rem 3rem;
+  background-color: var(--first-color);
+  color: #fff;
+  font-weight: 600;
+  margin: 10px 0 20px;
+  box-shadow: 0px 4px 5px rgb(245 56 56 / 50%);
+}
+
+.hero-btn:hover {
+  color: var(--first-color);
+  border: 1px solid var(--first-color);
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-content p {
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-content h1 {
+    font-size: 3.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    padding-right: 20px;
+  }
+}
+
+/* || Hero end */
