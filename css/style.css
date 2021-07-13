@@ -211,7 +211,7 @@ body {
 @media (min-width: 768px) {
   .icon-groups {
     padding: 1rem 0;
-    box-shadow: 0px 5px 20px rgb(0 0 0 / 25%);
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 15%);
     margin-bottom: 100px;
   }
   .icon-box{
@@ -322,3 +322,88 @@ body {
 }
 }
 /* || Feature Section */
+
+/* || Plan Section */
+.plan {
+  padding: 80px 0;
+  background-color: #fbfbfb;
+}
+.plan-list {
+  margin-top: 60px;
+}
+.plan-list-item {
+  margin: 0 50px;
+  padding: 80px 0 50px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+}
+.plan-list-item-header {
+  width: 145px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.plan-list-item-header h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.plan-list-item-details li svg {
+  margin-right: 20px;
+}
+.plan-list-item-details {
+  width: 182px;
+  margin: 0 auto;
+}
+.col-12:nth-child(2) .plan-list-item{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.pricing {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 80px 0 20px;
+  text-align: center;
+}
+.plan-btn {
+  width: 178px;
+  height: 45px;
+  line-height: 42px;
+  margin: 0 auto;
+  border-width: 2px;
+  font-weight: 700;
+  padding: 0;
+}
+.col-12:last-child .plan-list-item .plan-btn{
+  background-color: #F53855;
+  color: #fff;
+  box-shadow: 0px 4px 5px rgb(245 56 56 / 50%);
+}
+.col-12:last-child .plan-list-item .plan-btn:hover {
+  color: #F53855;
+  border-color: #F53855;
+  background-color: transparent;
+}
+@media (min-width: 768px){
+  .col-12:nth-child(2) .plan-list-item{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .plan-list-item {
+    height: 760px;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .pricing {
+    margin-top: 0; 
+  }
+  .plan-list-item-details{
+    flex-grow: 1;
+  }
+  .plan-section-heading {
+    text-align: center;
+    max-width: 555px;
+    margin: 0 auto;
+  }
+}
+/* || Plan Section */
