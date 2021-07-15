@@ -1,5 +1,12 @@
-p {
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+dl, ol, ul,p {
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -439,3 +446,110 @@ body {
   }
 } 
 /* || Partners Section */
+/* || Review Section */
+.review {
+  padding: 80px 0;
+}
+.review-section-heading {
+  margin-bottom: 60px;
+}
+.each-review {
+  height: 250px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #DDDDDD;
+  cursor: pointer;
+  transition: border-color 0.3s linear;
+}
+.each-review:hover,
+.each-review.active {
+  border: 2px solid var(--first-color);
+}
+.client-image{
+  margin-right: 21px;
+}
+.client-rating svg {
+  margin-left: 10px;
+}
+.client-info {
+  display: flex;
+}
+.client-name p:first-child{
+  font-weight: 500;
+  color: var(--second-color);
+  font-size: 18px;
+}
+.client-name p:last-child{
+  line-height: 30px;
+  color: #4F5665;
+  font-size: 14px;
+}
+.each-review-top {
+  display: flex;
+  justify-content: space-between;
+}
+.each-review-bottom {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 30px;
+  color: var(--second-color);
+}
+.all-controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.btn-nav,
+.dots-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  list-style: none;
+}
+.btn-nav {
+  order: 1
+}
+
+.dots-nav .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #DDE0E4;
+    display: inline-block;
+    cursor: pointer;
+  }
+.dots-nav .dot.slick-active{
+    width: 45px;
+    background-color: var(--first-color);
+    border-radius: 15px;
+}
+.btn-nav li{
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.btn-nav li:first-child{
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
+  margin-right: 20px;
+}
+.btn-nav li:last-child{
+  color: white;
+  background-color: var(--first-color);
+}
+.all-controls{
+  margin: 80px 0;
+}
+@media (min-width: 768px){
+  .each-review {
+    margin: 0 15px;
+  }
+}
+/* || Review Section */
